@@ -1,0 +1,29 @@
+<div class="page">
+  <div class="card">
+    <div class="brand">NuveHire</div>
+    <div class="tagline">Question {{ index }} of {{ total }}</div>
+
+    <form method="POST" id="form">
+        <p><strong>{{ q['question'] }}</strong></p>
+
+        <label class="option">
+            <input type="radio" name="option" value="A"> {{ q['option_a'] }}
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="B"> {{ q['option_b'] }}
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="C"> {{ q['option_c'] }}
+        </label>
+        <label class="option">
+            <input type="radio" name="option" value="D"> {{ q['option_d'] }}
+        </label>
+
+        <div class="timer">
+            Time Left: <span id="time">15</span> seconds
+        </div>
+    </form>
+  </div>
+</div>
+
+<script src="/static/js/timer.js"></script>

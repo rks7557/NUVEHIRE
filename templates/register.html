@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<div class="page">
+  <div class="card">
+    <div class="brand">NuveHire</div>
+    <div class="tagline">Candidate Registration</div>
+
+    <form method="POST">
+        <input name="name" placeholder="Full Name" required>
+        <input name="email" placeholder="Email address" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button>Create Account</button>
+    </form>
+  </div>
+</div>

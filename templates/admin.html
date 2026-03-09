@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NuveHire Admin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="page">
+  <div class="card">
+    <div class="brand">NuveHire</div>
+    <div class="tagline">Admin – Upload MCQs</div>
+
+    <!-- CSV UPLOAD FORM -->
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="csv_file" accept=".csv" required>
+        <button type="submit" name="upload_csv">Upload CSV</button>
+    </form>
+
+    <hr style="margin:20px 0;">
+
+    <!-- MANUAL ADD FORM -->
+    <form method="POST">
+        <input name="question" placeholder="Question">
+        <input name="a" placeholder="Option A">
+        <input name="b" placeholder="Option B">
+        <input name="c" placeholder="Option C">
+        <input name="d" placeholder="Option D">
+        <input name="correct" placeholder="Correct Option (A/B/C/D)">
+        <button type="submit" name="add_manual">Add Question</button>
+    </form>
+
+  </div>
+</div>
+
+</body>
+</html>

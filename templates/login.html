@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NuveHire</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+<div class="page">
+  <div class="card">
+    <div class="brand">NuveHire</div>
+    <div class="tagline">Infrastructure Hiring Platform</div>
+
+    <form method="POST">
+        <input name="email" placeholder="Email address" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button>Login</button>
+    </form>
+
+    <div class="footer-text">
+        New candidate? <a href="/register">register

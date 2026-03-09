@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary: #2563eb;
+    --dark: #0f172a;
+    --muted: #64748b;
+    --bg: #020617;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top, #1e293b, #020617);
+    min-height: 100vh;
+    color: #0f172a;
+}
+
+/* ---------- CENTER LAYOUT ---------- */
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ---------- CARD ---------- */
+.card {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 34px;
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.25),
+        inset 0 1px 0 rgba(255,255,255,0.3);
+}
+
+/* ---------- BRAND ---------- */
+.brand {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--dark);
+    letter-spacing: -0.5px;
+}
+
+.tagline {
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+/* ---------- TEXT ---------- */
+h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+p {
+    color: #334155;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ---------- INPUTS ---------- */
+input {
+    width: 100%;
+    padding: 13px 14px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+
+/* ---------- BUTTON ---------- */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(37,99,235,0.35);
+}
+
+/* ---------- LINKS ---------- */
+a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 22px;
+    color: var(--muted);
+}
+
+/* ---------- MCQ ---------- */
+.option {
+    display: block;
+    padding: 12px 14px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.option:hover {
+    border-color: var(--primary);
+    background: #f8fafc;
+}
+
+.option input {
+    margin-right: 10px;
+}
+
+/* ---------- TIMER ---------- */
+.timer {
+    margin-top: 18px;
+    text-align: center;
+    font-weight: 600;
+    color: #dc2626;
+    font-size: 14px;
+}
+/* ---------- DASHBOARD ---------- */
+.dashboard-card {
+    max-width: 520px;
+    text-align: center;
+}
+
+.test-info {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 22px 0;
+    font-size: 14px;
+    color: #334155;
+}
+
+.test-info div {
+    margin: 6px 0;
+}
+
+/* ---------- SMALL BUTTON ---------- */
+.btn-start {
+    width: auto;
+    padding: 12px 28px;
+    font-size: 15px;
+    border-radius: 999px;
+    margin-top: 10px;
+}
+
+/* ---------- HOVER INTERACTION ---------- */
+.dashboard-card:hover {
+    transform: translateY(-4px);
+    transition: 0.25s ease;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.35);
+}
+

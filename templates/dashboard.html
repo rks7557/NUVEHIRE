@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NuveHire Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="page">
+  <div class="card dashboard-card">
+    <div class="brand">NuveHire</div>
+    <div class="tagline">Timed Infrastructure Assessment</div>
+
+    <div class="test-info">
+        <div>⏱️ Time per question: <strong>15 seconds</strong></div>
+        <div>📋 Questions: <strong>Multiple Choice</strong></div>
+        <div>🔁 Navigation: <strong>No backtracking</strong></div>
+        <div>⚠️ Auto-submit on timeout</div>
+    </div>
+
+    <a href="/test">
+        <button class="btn-start">Start Test</button>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
